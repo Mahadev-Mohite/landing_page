@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 65px;
+    background-color: #1C1C1C;
+    opacity: 60%;
+    padding: 30px 0;
+}
+
+.logo {
+    margin-left: 90px;
+    opacity: 100%; 
+}
+
+.navbar .logo img {
+    height: 100%;
+}
+
+.header-section {
+    background-image: url('images/img_bg1.png');
+    background-size: cover;
+    text-align: flex-start;
+    color: white;
+    height: 500px;
+    object-fit: contain;
+}
+
+.header-section .home {
+    margin-top: 20px;
+}
+
+.home {
+    position: absolute;
+    left: 0;
+    top: 180px;
+    margin-left: 50px;
+}
+
+.typo {
+    font-weight: 600;
+    font-size: x-large;
+    line-height: 40px;
+    margin-left: 30px;
+}
+
+.header-section h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.header-section .cta-button {
+    background-color: #ffffff;
+    color: rgb(251, 39, 39);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.cta-button:hover {
+    background-color: #ebe6e3;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin: 40px 0 100px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.left-image, .right-image {
+}
+
+.cta-button {
+    font-size: x-large;
+    font-weight: 700;
+    height: 55px;
+    width: 190px;
+    background-color: #f4f4f4;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.image-container   left-image1, right-image1 img{
+    width: 40%;
+    flex: 1;
+    align-items: center;
+}
+
+h2 {
+    flex: 1;
+    font-size: 2em;
+    margin: 0;
+}
+
+.about {
+
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.about p{
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 83%; /* 10% space on both sides */
+    box-sizing: border-box;
+}
+
+.image-container2 img, .image-container2 h2 {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.image-container2 h2 {
+    flex: 2;
+    text-align: center;
+    /* margin: 0 20px; */
+    font-size: 24px;
+    color: #333;
+}
+.centered-text{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    max-width: 82%; /* 10% space on both sides */
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px; /* Space between product items */
+}
+
+.product-item {
+    flex: 1;
+    border: 1px solid #ccc;
+    /* padding: 20px; */
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 65%; /* Adjusting for two items in one row */
+    /* background-color: #fff; */
+    border-radius: 8px; /* Optional: add rounded corners for attractiveness */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* margin-top: 0; */
+    /* margin-bottom: 10px; */
+}
+
+.button-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.adj-text-button b {
+    margin-left: 29px;
+}
+
+.button-text {
+    background-color: #ff6600;
+    /* color: white; */
+    border: none;
+    /* padding: 5px 10px; */
+    cursor: pointer;
+    text-align: right;
+    border-radius: 4px; /* Optional: add rounded corners for attractiveness */
+}
+.adj-text-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%; /* Ensure the container takes full width */
+    margin-bottom: 10px;
+}
+
+.adj-text-button b {
+    margin-right: auto; /* Pushes the button to the right */
+}
+
+.adj-text-button button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right:10px ;
+}
+
+
+.button-text {
+    background-color: white;
+    color: rgb(251, 39, 39);
+    border: 2px solid rgb(251, 39, 39);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-text:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.end_img img, .follow_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    overflow: hidden;
+}
+
+.modal.active {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: 1000;
+}
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 70%; /* Adjusted for larger modal */
+    width: 100%;
+    text-align: center;
+}
+
+
+.modal-overlay.active {
+    display: block;
+}
+
+.image-section, .details-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+}
+#largeImage{
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail.active {
+    border-color: #000;
+}
+
+.close-button {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: #0e0d0d;
+    font-size: 34px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.close-button:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.large-image {
+    /* max-width: 100%; Ensure the large image does not overflow */
+    height: auto;
+    margin-bottom: 20px;
+    /* width: 80%; Adjusted width for the large image */
+}
+.details-section h2 {
+    margin-top: 0;
+}
+
+.details-section p {
+    margin: 10px 0;
+}
+
+.choose-button {
+    background-color: rgb(251, 39, 39);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+.choose-button:hover {
+    background-color: #e60000;
+}
+
+

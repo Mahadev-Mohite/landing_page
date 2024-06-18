@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimalist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<script>
+    function openModal() {
+        document.getElementById('productModal').classList.add('active');
+        document.getElementById('modalOverlay').classList.add('active');
+    }
+
+    function closeModal() {
+        document.getElementById('productModal').classList.remove('active');
+        document.getElementById('modalOverlay').classList.remove('active');
+    }
+
+    function updateModal(element, imageSrc, title, description, contents) {
+        document.getElementById('largeImage').src = imageSrc;
+        document.getElementById('productTitle').innerText = title;
+        document.getElementById('productDescription').innerText = description;
+        document.getElementById('productContents').innerHTML = contents.replace(/,/g, '<br>');
+
+        // Remove the active class from all thumbnails
+        var thumbnails = document.getElementsByClassName('thumbnail');
+        for (var i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].classList.remove('active');
+        }
+
+        // Add the active class to the clicked thumbnail
+        element.classList.add('active');
+    }
+</script>
+
+<div class="header-section">
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="images/logo.png" alt="MyLogo" /></a>
+    </nav>
+    <div class="home">
+        <div class="typo">
+            <h1>The choice is yours. </h1>
+            <h1>Because they don’t have one.</h1>
+        </div>
+        <button class="cta-button" onclick="openModal()">QUICK VIEW</button>
+    </div>
+</div>
+<div class="content">
+    <div class="image-container2">
+        <img src="images/left-img.png" alt="left 1" class="left-image1">
+        <h2>About</h2>  
+        <img src="images/right-img.png" alt="right 2" class="right-image1">
+    </div>
+    <div class="about">
+        <p class="centered-text">Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst them, brag about them.<br>
+            <b>The choice is yours. Because they don’t have one.</b></p>
+    </div>
+    <div class="image-container2">
+        <img src="images/left-img.png" alt="left 1" class="left-image1">
+        <h2>Our Products</h2>  
+        <img src="images/right-img.png" alt="right 2" class="right-image1">
+    </div>
+    <div class="products">
+        <div class="product-item">
+            <img src="images/raju_bomb.png" alt="raju rasi bomb" class="products">
+            <div class="adj-text-button">
+                <b>Raju Rasibomb</b>
+                <button class="button-text" onclick="openModal()">Quick View</button>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/raju_bomb.png" alt="raju rasi bomb" class="products">
+            <div class="adj-text-button">
+                <b>Ladiyon ki Rani Chani</b>
+                <button class="button-text" onclick="openModal()">Quick View</button>
+            </div>
+        </div>
+    </div>
+    <div class="end_img">
+        <img src="images/end_img.png" alt="end_img" />
+    </div>
+    <div class="follow_img">
+        <img src="images/followframe.png" alt="follo_img" />
+    </div>
+</div>
+
+    <div class="modal" id="productModal">
+        <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+            <button class="close-button" onclick="closeModal()">×</button>
+        </div>
+        <div class="image-section">
+            <img id="largeImage" src="images/raju_bomb.png" alt="Large Display">
+            <div class="thumbnail-row">
+            <img src="images/raju_bomb.png" alt="Thumbnail 1" class="thumbnail active" onclick="updateModal(this, 'images/mod_img.png', 'Raju Rassibomb','MRP','<b>Rajus Dream<b>','<img src=\'images/dotted_img.png\' />',  'This product packs an extra punch...', '10 hand-hurting pieces of rassi bombs, Jilled with great pain, Raju\'s hopes')">
+            <img src="images/mod_img.png" alt="Thumbnail 2" class="thumbnail" onclick="updateModal(this, 'images/mod_img.png', 'Another Product', 'Another product description...', 'Different contents here')">
+            <img src="images/mod_img.png" alt="Thumbnail 3" class="thumbnail" onclick="updateModal(this, 'images/mod_img.png', 'Yet Another Product', 'Yet another product description...', 'More different contents here')">
+        </div>
+    </div>
+    <div class="details-section">
+        <h3 id="productTitle">Raju Rassibomb</h3>
+        <p>MRP:</p>
+        <h2>Raju's Dreams/-</h2>
+        <img src="images/dotted_line.png" alt="dotted line" />
+        <h4>Product Description:</h4>
+        <p id="productDescription">This product packs an extra punch, thanks to the literal blood, sweat, and tears of a young boy.</p>
+        <img src="images/dotted_line.png" alt="dotted line" />
+        <h4>Product contents:</h4>
+        <p id="productContents"><b>⭐</b>&nbsp;10 hand-hurting pieces of rassi bombs<br><b>⭐</b>&nbsp;Jilled with great pain<br><b>⭐</b>&nbsp;Raju's hopes</p>
+        <img src="images/dotted_line.png" alt="dotted line" />
+        <h3>Shoping Time</h3>
+        <p>Before Raju understand that his dreams don not matter.</p>
+        <div class="choose-button" onclick="closeModal()">Choose Now</div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
